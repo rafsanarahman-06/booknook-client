@@ -1,36 +1,132 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📚 BookNook — A Small Online Library
 
-## Getting Started
+**Discover, borrow, and enjoy wonderful books!**
 
-First, run the development server:
+BookNook is a small online library platform where readers can explore books, share their own book collections, borrow books, and manage their reading activities through a simple and welcoming interface.
+
+## 🌐 Live Website
+
+**Live Client:** [https://booknook-client-nine-xi.vercel.app/](https://booknook-client-nine-xi.vercel.app/)
+
+**Backend API:** [https://booknook-server-uroj.onrender.com/](https://booknook-server-uroj.onrender.com/)
+
+## ✨ Key Features
+
+- **User Authentication:** Register and log in using email and password or Google authentication.
+- **Browse Books:** Explore the available library collection with book details.
+- **Search and Filter:** Find books easily using search and category filters.
+- **Add Books:** Logged-in users can contribute new books to the library.
+- **Manage Your Books:** Edit or delete books added by your account.
+- **Book Details:** View detailed information about individual books.
+- **Borrow Books:** Borrow books with a borrowing date and return date.
+- **My Borrows:** View your borrowed books in one organized place.
+- **Return Books:** Return borrowed books when finished.
+- **Responsive Design:** Enjoy a user-friendly experience on desktop, tablet, and mobile devices.
+- **New Arrivals:** Discover the latest books added to the library.
+
+## 🛠️ Technologies Used
+
+### Frontend
+
+- Next.js
+- React
+- JavaScript
+- Tailwind CSS
+- Axios
+- Lucide React
+- Swiper
+- Better Auth
+
+### Backend
+
+- Node.js
+- Express.js
+- MongoDB
+
+### Deployment
+
+- Vercel
+- Render
+- MongoDB Atlas
+
+## 🚀 Run Locally
+
+### 1. Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/rafsanarahman-06/booknook-client.git
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Navigate to the project directory
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+cd booknook-client
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
 
-## Learn More
+### 3. Install dependencies
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 4. Configure environment variables
 
-## Deploy on Vercel
+Create a `.env.local` file and configure the required environment variables:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```env
+MONGODB_URI=your_mongodb_connection_string
+BETTER_AUTH_SECRET=your_better_auth_secret
+BETTER_AUTH_URL=http://localhost:3000
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+NEXT_PUBLIC_API_URL=http://localhost:5000
+NEXT_PUBLIC_IMGBB_API_KEY=your_imgbb_api_key
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+
+Use your own credentials. Never commit secret values to GitHub.
+
+### 5. Start the development server
+
+```bash
+npm run dev -- --webpack
+
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📁 Project Structure
+
+```text
+client/
+├── app/
+│   ├── add-book/
+│   ├── books/
+│   ├── login/
+│   ├── register/
+│   ├── my-books/
+│   ├── my-borrows/
+│   └── my-profile/
+├── components/
+├── lib/
+├── public/
+├── package.json
+└── README.md
+
+```
+
+## 🎨 Design Philosophy
+
+BookNook follows a calm reading-room design concept with warm paper backgrounds, soft sage tones, muted forest-green accents, and comfortable typography.
+
+The goal is to create a welcoming digital library experience for readers of all ages.
+
+## 👩‍💻 Author
+
+**Rafsana Rahman**
+
+Programming Hero Assignment 8 — BookNook
