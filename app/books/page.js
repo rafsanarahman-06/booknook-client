@@ -10,8 +10,7 @@ import {
   RefreshCw,
 } from "lucide-react";
 
-const API_URL =
-  process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_URL = "https://booknook-server-uroj.onrender.com";
 
 const categories = ["All", "Fiction", "Science", "History", "Kids", "Others"];
 
