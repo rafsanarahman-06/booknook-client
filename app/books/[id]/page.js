@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 import { useSession } from "@/lib/auth-client";
 import ProtectedRoute from "@/components/ProtectedRoute";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://booknook-server-uroj.onrender.com";
 
 function BookDetailsContent() {
 const { id } = useParams();

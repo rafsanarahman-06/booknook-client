@@ -134,7 +134,7 @@ export default function Home() {
     const fetchNewArrivals = async () => {
       try {
         const apiUrl =
-          process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+          process.env.NEXT_PUBLIC_API_URL || "https://booknook-server-uroj.onrender.com";
 
         const response = await fetch(`${apiUrl}/books`, {
           cache: "no-store",

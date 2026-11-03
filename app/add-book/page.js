@@ -127,7 +127,7 @@ function AddBookForm() {
       };
 
       const apiUrl =
-        process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+        process.env.NEXT_PUBLIC_API_URL || "https://booknook-server-uroj.onrender.com";
 
       const response = await axios.post(
         `${apiUrl}/books`,

@@ -7,7 +7,7 @@ import ProtectedRoute from "@/components/ProtectedRoute";
 import { BookOpen, CalendarDays, LoaderCircle, RotateCcw } from "lucide-react";
 import toast from "react-hot-toast";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://booknook-server-uroj.onrender.com";
 
 function MyBorrowsContent() {
   const { data: session } = useSession();
